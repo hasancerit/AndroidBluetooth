@@ -1,38 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Baglanti">
+    android:orientation="vertical"
+    tools:context=".Baglanti"
+    android:background="@color/backGroundKontrol"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical|center_horizontal">
 
     <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/walle1"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:fontFamily="@font/gerisayim"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wall-e Seçim Bilmemnesi" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/regular"
+        android:background="@drawable/secimbackground"
         android:id="@+id/kontrol"
-        android:layout_width="139dp"
-        android:layout_height="282dp"
-        android:layout_marginTop="396dp"
-        android:layout_marginEnd="136dp"
-        android:text="Kontrol"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Wall-e Remote Control" />
 
     <Button
+        android:fontFamily="@font/regular"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:background="@drawable/secimbackground"
         android:id="@+id/sensorKontrol"
-        android:layout_width="153dp"
-        android:layout_height="282dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="48dp"
-        android:text="Kontrol Sensor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Wall-e Sensor Kontrol"/>
 
     <Button
+        android:fontFamily="@font/regular"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:background="@drawable/secimbackground"
         android:id="@+id/cizgiİzle"
-        android:layout_width="126dp"
-        android:layout_height="276dp"
-        android:layout_marginStart="16dp"
-        android:text="Çizgi İzleyen"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="80dp" />
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Wall-e Otonom"/>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

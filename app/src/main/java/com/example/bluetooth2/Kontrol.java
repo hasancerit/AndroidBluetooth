@@ -1,6 +1,7 @@
 package com.example.bluetooth2;
 
 import android.bluetooth.BluetoothSocket;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -18,7 +19,7 @@ import javax.security.auth.login.LoginException;
 
 public class Kontrol extends AppCompatActivity  {
     private BluetoothSocket btSocket;
-    private Button ileri,geri,sag,sol;
+    private Button ileri,geri,sag,sol,dön;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,16 +30,21 @@ public class Kontrol extends AppCompatActivity  {
         geri = findViewById(R.id.geri);
         sag = findViewById(R.id.sag);
         sol = findViewById(R.id.sol);
+        dön = findViewById(R.id.dön);
 
-        //C GİDERSE KONTROL BSALAR
+
        /* btSocket = Baglanti.btSocket;
+
+        //C GİDERSE KONTROL BASLAR
         try {
             btSocket.getOutputStream().write("c".toString().getBytes());
         } catch (IOException e) {
             e.printStackTrace();
         }*/
+
+
         /*
-        //onclicks2
+        //onclicks
          ileri.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -150,12 +156,20 @@ public class Kontrol extends AppCompatActivity  {
                 return false;
             }
         });*/
+
+        dön.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                /*geriDön();
+                finish();
+                startActivity(new Intent(Kontrol.this,Baglanti.class));*/
+            }
+        });
     }
 
     @Override
     protected void onResume() {
-        super.onResume();
-/*
+        super.onResume();/*
         //o GİDERSE CİZGİ İZLEYEN BASLAR
         try {
             btSocket.getOutputStream().write("c".toString().getBytes());
@@ -175,28 +189,6 @@ public class Kontrol extends AppCompatActivity  {
             btSocket.getOutputStream().write("b".toString().getBytes());
         } catch (IOException e) {
             e.printStackTrace();
-        }
-    }
-
-    public void veriGonder(String basili,String cekili,MotionEvent motionEvent){
-        if (btSocket!=null){
-            switch (motionEvent.getAction()){
-                case MotionEvent.ACTION_DOWN:
-                    try {
-                        btSocket.getOutputStream().write(basili.toString().getBytes());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    break;
-
-                case MotionEvent.ACTION_UP:
-                    try {
-                        btSocket.getOutputStream().write(cekili.toString().getBytes());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    break;
-            }
         }
     }
 }

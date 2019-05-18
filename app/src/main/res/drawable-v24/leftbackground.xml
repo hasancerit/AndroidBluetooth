@@ -2,10 +2,10 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:state_pressed="true" >
-        <bitmap android:src="@drawable/greenleft"/>
+        <bitmap android:src="@drawable/clicksol"/>
     </item>
 
     <item>
-        <bitmap android:src="@drawable/grayleft"/>
+        <bitmap android:src="@drawable/normalsol"/>
     </item>
 </selector>

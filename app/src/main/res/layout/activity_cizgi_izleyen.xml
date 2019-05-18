@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cizgiİzleyen">
+    android:orientation="vertical"
+    tools:context=".Cizgiİzleyen"
+    android:background="@drawable/wallearka2"
+    android:gravity="center_horizontal|center_vertical">
 
     <TextView
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/textUst"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Çizgi İzleyen Baslıyor"
+        android:fontFamily="@font/gerisayim"/>
+
+    <TextView
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
         android:id="@+id/text"
-        android:layout_width="288dp"
-        android:layout_height="185dp"
-        android:text="ÇİZGİ İZLEYEN BAŞLADI"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="268dp" />
-</android.support.constraint.ConstraintLayout>
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="50dp"
+        android:text="5..."
+        android:fontFamily="@font/gerisayim"/>
+
+</LinearLayout>

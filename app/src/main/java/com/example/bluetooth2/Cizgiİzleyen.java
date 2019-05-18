@@ -14,25 +14,25 @@ public class Cizgiİzleyen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cizgi_izleyen);
 
-        btSocket = Baglanti.btSocket;
+        /*btSocket = Baglanti.btSocket;
 
         //o GİDERSE CİZGİ İZLEYEN BASLAR
         try {
             btSocket.getOutputStream().write("o".toString().getBytes());
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         //o GİDERSE CİZGİ İZLEYEN BASLAR
-        try {
+        /*try {
             btSocket.getOutputStream().write("o".toString().getBytes());
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
     @Override
