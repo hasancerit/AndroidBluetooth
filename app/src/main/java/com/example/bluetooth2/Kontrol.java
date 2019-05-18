@@ -31,46 +31,15 @@ public class Kontrol extends AppCompatActivity  {
         sol = findViewById(R.id.sol);
 
         //C GİDERSE KONTROL BSALAR
-        btSocket = Baglanti.btSocket;
+       /* btSocket = Baglanti.btSocket;
         try {
             btSocket.getOutputStream().write("c".toString().getBytes());
         } catch (IOException e) {
             e.printStackTrace();
-        }
-
-        /*//ONCLİCKLER
-        ileri.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                veriGonder("i","d",motionEvent);
-                return false;
-            }
-        });
-        geri.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                veriGonder("g","d",motionEvent);
-                return false;
-            }
-        });
-        sag.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                veriGonder("r","d",motionEvent);
-                return false;
-            }
-        });*/
-
-        /*sol.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                veriGonder("l","d",motionEvent);
-                return false;
-            }
-        });*/
-
+        }*/
+        /*
         //onclicks2
-        ileri.setOnTouchListener(new View.OnTouchListener() {
+         ileri.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (btSocket!=null){
@@ -180,25 +149,25 @@ public class Kontrol extends AppCompatActivity  {
                 }
                 return false;
             }
-        });
+        });*/
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-
+/*
         //o GİDERSE CİZGİ İZLEYEN BASLAR
         try {
             btSocket.getOutputStream().write("c".toString().getBytes());
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        geriDön();
-        finish();
+        /*geriDön();
+        finish();*/
     }
 
     public void geriDön(){

@@ -36,12 +36,12 @@ public class Baglanti extends AppCompatActivity {
         kontrol = findViewById(R.id.kontrol);
         kontrolSensor = findViewById(R.id.sensorKontrol);
 
-        cizgiİzleyen.setVisibility(View.GONE);
+        /*cizgiİzleyen.setVisibility(View.GONE);
         kontrolSensor.setVisibility(View.GONE);
-        kontrol.setVisibility(View.GONE);
+        kontrol.setVisibility(View.GONE);*/
 
-        address = getIntent().getExtras().getString("device_address");
-        new BTbaglanti().execute();
+        /*address = getIntent().getExtras().getString("device_address");
+        new BTbaglanti().execute();*/
 
         cizgiİzleyen.setOnClickListener(new View.OnClickListener() {
             @Override

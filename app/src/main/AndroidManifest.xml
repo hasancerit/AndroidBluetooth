@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SensorKontrol"></activity>
-        <activity android:name=".Kontrol" />
+        <activity android:name=".Kontrol" android:screenOrientation="landscape"/>
         <activity android:name=".Cizgiİzleyen" />
         <activity android:name=".Baglanti" />
         <activity android:name=".MainActivity">

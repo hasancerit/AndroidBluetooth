@@ -49,8 +49,20 @@ public class MainActivity extends AppCompatActivity {
 
         eslesmisList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) { baglan(view);
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                baglan(view);
             }});
+
+
+
+
+        Button git = findViewById(R.id.git);
+        git.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,Baglanti.class));
+            }
+        });
     }
 
     public void acKapatAction(){
